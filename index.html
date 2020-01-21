@@ -343,10 +343,10 @@
         
           
             <p>试一试第一篇博客。<br>刚学完矩阵论，就稍微写一点矩阵论的内容吧。</p>
-<h2 id="SVD-分解"><a href="#SVD-分解" class="headerlink" title="SVD 分解"></a>SVD 分解</h2><p>对于矩阵 $ A∈R^{n×m} $ ，其奇异值分解为$ A=USV^{T} $。在公式中，$ U∈R^{m×m} $和$ V∈R^{n×n} $都是正交矩阵，$U$表示矩阵$A$的左奇异特征矩阵，$V$表示矩阵$A$的右奇异特征矩阵，$S$是一个对角矩阵，其对角线上的元素为$A$的奇异值，并且是按照从大到小的顺序排列的。所有的奇异值表示矩阵$A$中的信息总量。示意图如下所示。<br><img src="pic/hello-world/SVD.jpg" alt="SVD分解" title="SVD分解"></p>
+<h2 id="SVD-分解"><a href="#SVD-分解" class="headerlink" title="SVD 分解"></a>SVD 分解</h2><p>对于矩阵 $ A∈R^{n×m} $ ，其奇异值分解为$ A=USV^{T} $。在公式中，$ U∈R^{m×m} $和$ V∈R^{n×n} $都是正交矩阵，$U$表示矩阵$A$的左奇异特征矩阵，$V$表示矩阵$A$的右奇异特征矩阵，$S$是一个对角矩阵，其对角线上的元素为$A$的奇异值，并且是按照从大到小的顺序排列的。所有的奇异值表示矩阵$A$中的信息总量。示意图如下所示。<br><img src="https://wx1.sinaimg.cn/mw690/005K48a2ly1gb4lgyn2vxj30mb05hgmq.jpg" alt="SVD分解" title="SVD分解"></p>
 <center>上图：SVD分解示意图</center>
 
-<p>使用SVD分解来为矩阵$A$降维，最重要的事情是要确保降维后的矩阵和原矩阵的信息总量相差不大。假设所有奇异值的平方和为$P$，前$f$个奇异值的平方和为$P_{f}$，则信息阈值为$\sigma=P_f⁄P$，通常要求$\sigma≥99\%$，以此可以确定$f$的取值。据此，对角矩阵$S$可以变成一个新的对角矩阵$S_f$，新的对角矩阵只保留了前$f$个奇异值，同样地，矩阵$U$和$V$只保留了前$f$个左右奇异值向量，以此形成了新的矩阵$U_f$和$V_f$。降维后的矩阵$A_f$可以表示成$A≈A_f=U_f S_f V_f^T$。示意图如下所示。<br><img src="pic/hello-world/SVD-reduce.jpg" alt="SVD降维" title="SVD降维"></p>
+<p>使用SVD分解来为矩阵$A$降维，最重要的事情是要确保降维后的矩阵和原矩阵的信息总量相差不大。假设所有奇异值的平方和为$P$，前$f$个奇异值的平方和为$P_{f}$，则信息阈值为$\sigma=P_f⁄P$，通常要求$\sigma≥99\%$，以此可以确定$f$的取值。据此，对角矩阵$S$可以变成一个新的对角矩阵$S_f$，新的对角矩阵只保留了前$f$个奇异值，同样地，矩阵$U$和$V$只保留了前$f$个左右奇异值向量，以此形成了新的矩阵$U_f$和$V_f$。降维后的矩阵$A_f$可以表示成$A≈A_f=U_f S_f V_f^T$。示意图如下所示。<br><img src="https://wx2.sinaimg.cn/mw690/005K48a2ly1gb4lgylv32j30mb05hdg8.jpg" alt="SVD降维" title="SVD降维"></p>
 <center>上图：SVD降维示意图</center>
 
           
