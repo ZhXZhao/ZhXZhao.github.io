@@ -85,17 +85,17 @@
 <meta property="og:url" content="http://yoursite.com/2020/01/14/Xx_Counter_attack_Road/index.html">
 <meta property="og:site_name" content="The North">
 <meta property="og:description" content="先验知识数据库事务的四个特性(ACID) 原子性(A: Atomicity)事务是数据库的逻辑工作单位，事务中包括的诸操作要么都做，要么都不做。 一致性(C: Consistency)事务执行的结果必须是使数据库从一个一致性状态变到另一个一致性状态。一致性与原子性是密切相关的。 隔离性(I: Isolation)一个事务的执行不能被其他事务干扰。即一个事务的内部操作及使用的数据对其他并发事务是隔离">
-<meta property="og:image" content="http://yoursite.com/2020/01/14/Xx_Counter_attack_Road/pic/Xx_Counter_attack_Road/pic1.jpg">
-<meta property="og:image" content="http://yoursite.com/2020/01/14/Xx_Counter_attack_Road/pic/Xx_Counter_attack_Road/pic2.jpg">
-<meta property="og:image" content="http://yoursite.com/2020/01/14/Xx_Counter_attack_Road/pic/Xx_Counter_attack_Road/pic3.JPG">
-<meta property="og:image" content="http://yoursite.com/2020/01/14/Xx_Counter_attack_Road/pic/Xx_Counter_attack_Road/2AD.JPG">
-<meta property="og:image" content="http://yoursite.com/2020/01/14/Xx_Counter_attack_Road/pic/Xx_Counter_attack_Road/adh.JPG">
+<meta property="og:image" content="https://wx4.sinaimg.cn/mw690/005K48a2ly1gb4mgolj2aj31540u0438.jpg">
+<meta property="og:image" content="https://wx1.sinaimg.cn/mw690/005K48a2ly1gb4mgsdgs3j32to0nj7cf.jpg">
+<meta property="og:image" content="https://wx2.sinaimg.cn/mw690/005K48a2ly1gb4mgv3ghgj30im06jwev.jpg">
+<meta property="og:image" content="https://wx2.sinaimg.cn/mw690/005K48a2ly1gb4mgd02ltj30vp0l8q6r.jpg">
+<meta property="og:image" content="https://wx2.sinaimg.cn/mw690/005K48a2ly1gb4mgyw3ivj30w30m5jua.jpg">
 <meta property="article:published_time" content="2020-01-14T09:23:43.000Z">
-<meta property="article:modified_time" content="2020-01-21T14:34:46.577Z">
+<meta property="article:modified_time" content="2020-01-21T15:58:33.368Z">
 <meta property="article:author" content="ZhXZhao">
 <meta property="article:tag" content="database-paper">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020/01/14/Xx_Counter_attack_Road/pic/Xx_Counter_attack_Road/pic1.jpg">
+<meta name="twitter:image" content="https://wx4.sinaimg.cn/mw690/005K48a2ly1gb4mgolj2aj31540u0438.jpg">
 
 
 
@@ -520,11 +520,11 @@
 <li>二级封锁协议<br>二级封锁协议是指，在一级封锁协议基础上增加事务T在读取数据R之前必须先对其加S锁，<strong>读完后即可释放S锁</strong>。<strong>二级封锁协议除防止了丢失修改，还可进一步防止读脏数据。</strong></li>
 <li>三级封锁协议<br>三级封锁协议是指，在一级封锁协议的基础上增加事务T在读取数据R之前必须先对其加S锁，<strong>直到事务结束才释放</strong>。<strong>三级封锁协议除了防止丢失修改和读脏数据外，还进一步防止了不可重复读。</strong></li>
 </ol>
-<p><img src="pic/Xx_Counter_attack_Road/pic1.jpg" alt="使用封锁机制解决三种数据不一致性的示例" title="使用封锁机制解决三种数据不一致性的示例"></p>
+<p><img src="https://wx4.sinaimg.cn/mw690/005K48a2ly1gb4mgolj2aj31540u0438.jpg" alt="使用封锁机制解决三种数据不一致性的示例" title="使用封锁机制解决三种数据不一致性的示例"></p>
 <center>上图：使用封锁机制解决三种数据不一致性的示例</center>
 
 <p><br></p>
-<p><img src="pic/Xx_Counter_attack_Road/pic2.jpg" alt="不同级别的封锁协议和一致性保证" title="不同级别的封锁协议和一致性保证"></p>
+<p><img src="https://wx1.sinaimg.cn/mw690/005K48a2ly1gb4mgsdgs3j32to0nj7cf.jpg" alt="不同级别的封锁协议和一致性保证" title="不同级别的封锁协议和一致性保证"></p>
 <center>上图：不同级别的封锁协议和一致性保证</center>
 
 <h3 id="隔离等级"><a href="#隔离等级" class="headerlink" title="隔离等级"></a>隔离等级</h3><ol>
@@ -537,7 +537,7 @@
 <li><p>串行化(Serializable)：事务不可并发执行</p>
 </li>
 </ol>
-<p><img src="pic/Xx_Counter_attack_Road/pic3.JPG" alt="隔离等级对应解决的数据不一致性问题" title="隔离等级对应解决的数据不一致性问题"></p>
+<p><img src="https://wx2.sinaimg.cn/mw690/005K48a2ly1gb4mgv3ghgj30im06jwev.jpg" alt="隔离等级对应解决的数据不一致性问题" title="隔离等级对应解决的数据不一致性问题"></p>
 <center>上图：隔离等级对应解决的数据不一致性问题（N代表该隔离等级下不存在该数据一致性问题，Y代表存在）</center>
 
 <h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>文章的贡献：分析了广受欢迎的电子商务网站，发现了22个新的由于没有正确使用事务而引发的漏洞。</p>
@@ -560,7 +560,7 @@ Detection(2AD)</p>
 <li><p>从抽象历史图中找出非平凡的环，继而生成可能存在并发异常的<strong>API调用组</strong></p>
 </li>
 </ol>
-<p><img src="pic/Xx_Counter_attack_Road/2AD.JPG" alt="2AD步骤" title="2AD步骤"></p>
+<p><img src="https://wx2.sinaimg.cn/mw690/005K48a2ly1gb4mgd02ltj30vp0l8q6r.jpg" alt="2AD步骤" title="2AD步骤"></p>
 <center>2AD步骤</center>
 
 <h4 id="构建抽象历史图"><a href="#构建抽象历史图" class="headerlink" title="构建抽象历史图"></a>构建抽象历史图</h4><p style="text-indent:2em">构建规则：用圆圈代表一个读或写操作，用方框代表一个事务，用虚线框代表一个API调用，在节点之间连线代表互为冲突操作。</p>
@@ -574,7 +574,7 @@ SELECT usage FROM voucher WHERE code = HNUHY
 UPDATE voucher SET usage = 1 WHERE code = HNUHY
 COMMIT
 </code></pre><p>对于这样的一段事务，可以按上述规则生成如下的抽象历史图。</p>
-<p><img src="pic/Xx_Counter_attack_Road/adh.JPG" alt="抽象历史图示例" title="抽象历史图示例"></p>
+<p><img src="https://wx2.sinaimg.cn/mw690/005K48a2ly1gb4mgyw3ivj30w30m5jua.jpg" alt="抽象历史图示例" title="抽象历史图示例"></p>
 <center>抽象历史图示例</center>
 
 <p style="text-indent:2em">对于上图中绿色的箭头及相连的节点，构成了一个非平凡的环，则认为这个非平凡环上的节点中的操作并发执行时可能会引发异常。</p>
