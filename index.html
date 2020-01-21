@@ -261,141 +261,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/14/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ZhXZhao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="The North">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/01/14/hello-world/" itemprop="url">Have a try</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-14T17:23:43+08:00">
-                2020-01-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2020/01/14/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2020/01/14/hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>试一试第一篇博客。<br>刚学完矩阵论，就稍微写一点矩阵论的内容吧。</p>
-<h2 id="SVD-分解"><a href="#SVD-分解" class="headerlink" title="SVD 分解"></a>SVD 分解</h2><p>对于矩阵 $ A∈R^{n×m} $ ，其奇异值分解为$ A=USV^{T} $。在公式中，$ U∈R^{m×m} $和$ V∈R^{n×n} $都是正交矩阵，$U$表示矩阵$A$的左奇异特征矩阵，$V$表示矩阵$A$的右奇异特征矩阵，$S$是一个对角矩阵，其对角线上的元素为$A$的奇异值，并且是按照从大到小的顺序排列的。所有的奇异值表示矩阵$A$中的信息总量。示意图如下所示。<br><img src="https://wx1.sinaimg.cn/mw690/005K48a2ly1gb4lgyn2vxj30mb05hgmq.jpg" alt="SVD分解" title="SVD分解"></p>
-<center>上图：SVD分解示意图</center>
-
-<p>使用SVD分解来为矩阵$A$降维，最重要的事情是要确保降维后的矩阵和原矩阵的信息总量相差不大。假设所有奇异值的平方和为$P$，前$f$个奇异值的平方和为$P_{f}$，则信息阈值为$\sigma=P_f⁄P$，通常要求$\sigma≥99\%$，以此可以确定$f$的取值。据此，对角矩阵$S$可以变成一个新的对角矩阵$S_f$，新的对角矩阵只保留了前$f$个奇异值，同样地，矩阵$U$和$V$只保留了前$f$个左右奇异值向量，以此形成了新的矩阵$U_f$和$V_f$。降维后的矩阵$A_f$可以表示成$A≈A_f=U_f S_f V_f^T$。示意图如下所示。<br><img src="https://wx2.sinaimg.cn/mw690/005K48a2ly1gb4lgylv32j30mb05hdg8.jpg" alt="SVD降维" title="SVD降维"></p>
-<center>上图：SVD降维示意图</center>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/14/Xx_Counter_attack_Road/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -743,6 +608,141 @@ COMMIT
 <p style="text-indent:2em">最后发现超过2M的网站都存在并发的漏洞，并且从这些网站中发现了22个由于没有正确使用事务产生的新的异常。</p>
 
 <h2 id="一些想法"><a href="#一些想法" class="headerlink" title="一些想法"></a>一些想法</h2><p style="text-indent:2em">这篇文章厉害之处在于能够发现当前网站中由于事务并发执行而带来的异常问题，并设计了一套完善的、跨语言的方案来检测这些潜在的异常问题。并且这些漏洞都是较为严重的。</p>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/14/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZhXZhao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="The North">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/01/14/hello-world/" itemprop="url">Have a try</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-14T17:23:43+08:00">
+                2020-01-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/01/14/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2020/01/14/hello-world/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>试一试第一篇博客。<br>刚学完矩阵论，就稍微写一点矩阵论的内容吧。</p>
+<h2 id="SVD-分解"><a href="#SVD-分解" class="headerlink" title="SVD 分解"></a>SVD 分解</h2><p>对于矩阵 $ A∈R^{n×m} $ ，其奇异值分解为$ A=USV^{T} $。在公式中，$ U∈R^{m×m} $和$ V∈R^{n×n} $都是正交矩阵，$U$表示矩阵$A$的左奇异特征矩阵，$V$表示矩阵$A$的右奇异特征矩阵，$S$是一个对角矩阵，其对角线上的元素为$A$的奇异值，并且是按照从大到小的顺序排列的。所有的奇异值表示矩阵$A$中的信息总量。示意图如下所示。<br><img src="https://wx1.sinaimg.cn/mw690/005K48a2ly1gb4lgyn2vxj30mb05hgmq.jpg" alt="SVD分解" title="SVD分解"></p>
+<center>上图：SVD分解示意图</center>
+
+<p>使用SVD分解来为矩阵$A$降维，最重要的事情是要确保降维后的矩阵和原矩阵的信息总量相差不大。假设所有奇异值的平方和为$P$，前$f$个奇异值的平方和为$P_{f}$，则信息阈值为$\sigma=P_f⁄P$，通常要求$\sigma≥99\%$，以此可以确定$f$的取值。据此，对角矩阵$S$可以变成一个新的对角矩阵$S_f$，新的对角矩阵只保留了前$f$个奇异值，同样地，矩阵$U$和$V$只保留了前$f$个左右奇异值向量，以此形成了新的矩阵$U_f$和$V_f$。降维后的矩阵$A_f$可以表示成$A≈A_f=U_f S_f V_f^T$。示意图如下所示。<br><img src="https://wx2.sinaimg.cn/mw690/005K48a2ly1gb4lgylv32j30mb05hdg8.jpg" alt="SVD降维" title="SVD降维"></p>
+<center>上图：SVD降维示意图</center>
+
           
         
       
